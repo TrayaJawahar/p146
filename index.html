@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color:teal">
+
+        <!--Camera-->
+        <a-entity position="0 5 20">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!--Floor-->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="15" length="10" color="yellow"></a-plane>
+
+        <!--Body-->
+        <a-cylinder position="0 5 -5" radius="3" height="7" color="grey"></a-cylinder>
+
+        <!--Neck-->
+        <a-cone position="0 10 -5" radius-bottom="1.5" height="3" color="grey"></a-cone>
+
+        <!--Head-->
+        <a-box position="0 13 -5" color="grey" height="4" width="4" lenght="4"></a-box>
+
+        <!--Leg-->
+        <a-cylinder position="1 0 -5" radius="0.3" rotation ="0 90 0"height="1.7" color="blue"></a-cylinder>
+        <a-cylinder position="-1 0 -5" radius="0.3" rotation ="0 90 0"height="1.7" color="blue"></a-cylinder>
+        <a-box position="-1 -1 -5" color="red" height="1" width="1" lenght="1"></a-box>
+        <a-box position="1 -1 -5" color="red" height="1" width="1" lenght="1"></a-box>
+
+        <!--Hands-->
+        <a-cylinder position="-3.3 6 -5" radius="0.3" rotation ="0 90 135"height="4" color="blue"></a-cylinder>
+        <a-cylinder position="3.3 6 -5" radius="0.3" rotation ="0 90 115"height="4" color="blue"></a-cylinder>
+        <a-octahedron position ="-2.5 5 2" radius ="0.60" rotation="0 0 0" color="indigo"></a-octahedron>
+        <a-octahedron position ="2.5 5.2 2" radius ="0.60" rotation="0 0 0" color="indigo"></a-octahedron>
+
+         <!--Antena-->
+         <a-cylinder position="0 16 -5" radius="0.1" rotation ="0 90 0" height="1.7" color="blue"></a-cylinder>
+         <a-sphere position="0 17 -5" radius="0.6" color="red"></a-sphere>
+
+         <!--Facial Features-->
+         <a-sphere position="-1 13.5 -5" radius="0.6" color="black"></a-sphere>
+         <a-sphere position="1 13.5 -5" radius="0.6" color="black"></a-sphere>
+         <a-torus position="0.1 11.5 0" arc="-180" radius="0.4" radius-tubular="0.03" color="blue"></a-torus>
+
+          <!--Buttons-->
+          <a-octahedron position ="1.6 7.3 2" radius ="0.40" rotation="0 0 0" color="purple"></a-octahedron>
+          <a-octahedron position ="0.4 7.3 2" radius ="0.30" rotation="0 0 0" color="green"></a-octahedron>
+          <a-octahedron position ="-0.6 7.3 2" radius ="0.30" rotation="0 0 0" color="yellow"></a-octahedron>
+          <a-octahedron position ="-1.6 7.3 2" radius ="0.30" rotation="0 0 0" color="red"></a-octahedron>
+
+
+    </a-scene>
+</body>
+
+</html>
